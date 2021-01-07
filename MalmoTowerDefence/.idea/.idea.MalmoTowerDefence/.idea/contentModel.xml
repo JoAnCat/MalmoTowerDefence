@@ -4,9 +4,125 @@
     <e p="C:\Users\jonat\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\jonat\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_MalmoTowerDefence.1814643797.00" t="ExcludeRecursive" />
     <e p="C:\Users\jonat\UnityProjects\GitHubUnity\MalmoTowerDefence\MalmoTowerDefence" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ExternalAssets" t="Include">
+        <e p="BoardManager.cs" t="Include" />
+        <e p="BuyNDrag.cs" t="Include" />
+        <e p="CrystalHolder.cs" t="Include" />
+        <e p="DragUnit.cs" t="Include" />
+        <e p="DwarfData.cs" t="Include" />
+        <e p="LaneManager.cs" t="Include" />
+        <e p="Lanes4BoardManager.cs" t="Include" />
+        <e p="MouseInput.cs" t="Include" />
+        <e p="Plugins" t="Include">
+          <e p="Easy performant outline" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Models for Demo scene" t="Include">
+                <e p="2d city" t="Include">
+                  <e p="License free.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="BubbleSpot.cs" t="Include" />
+                <e p="CameraController.cs" t="Include" />
+                <e p="Character.cs" t="Include" />
+                <e p="Chicken.cs" t="Include" />
+                <e p="Doughnut.cs" t="Include" />
+                <e p="ICollectable.cs" t="Include" />
+                <e p="InteractableObject.cs" t="Include" />
+              </e>
+              <e p="Sounds" t="Include">
+                <e p="Third-Party Notices.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Resources" t="Include">
+              <e p="Easy performant outline" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="BasicBlit.shader" t="Include" />
+                  <e p="Blur.shader" t="Include" />
+                  <e p="ClearStencil.shader" t="Include" />
+                  <e p="Dilate.shader" t="Include" />
+                  <e p="EdgeDilate.shader" t="Include" />
+                  <e p="Fills" t="Include">
+                    <e p="ColorFill.shader" t="Include" />
+                    <e p="Dots.shader" t="Include" />
+                    <e p="EmptyFill.shader" t="Include" />
+                    <e p="FillMask.shader" t="Include" />
+                    <e p="Fresnel.shader" t="Include" />
+                    <e p="Interlaced.shader" t="Include" />
+                  </e>
+                  <e p="FinalBlit.shader" t="Include" />
+                  <e p="MiskCG.cginc" t="Include" />
+                  <e p="Outline.shader" t="Include" />
+                  <e p="OutlineMask.shader" t="Include" />
+                  <e p="PartialBlit.shader" t="Include" />
+                  <e p="TransparentBlit.shader" t="Include" />
+                  <e p="ZPrepass.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="BlitUtility.cs" t="Include" />
+              <e p="BlurType.cs" t="Include" />
+              <e p="CameraUtility.cs" t="Include" />
+              <e p="CustomTargetBlitter.cs" t="Include" />
+              <e p="DOTween support" t="Include">
+                <e p="DOTweenEPO.cs" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="EPOSetuper.cs" t="Include" />
+                <e p="ModelPostprocessor.cs" t="Include" />
+                <e p="OutlinableEditor.cs" t="Include" />
+                <e p="OutlinePropertiesPropertyDrawer.cs" t="Include" />
+                <e p="OutlinerEditor.cs" t="Include" />
+                <e p="OutlineTargetPropertyDrawer.cs" t="Include" />
+                <e p="SerializedPassPropertyDrawer.cs" t="Include" />
+              </e>
+              <e p="KeywordsUtility.cs" t="Include" />
+              <e p="OnPreRenderEventTransferer.cs" t="Include" />
+              <e p="Outlinable.cs" t="Include" />
+              <e p="OutlineEffect.cs" t="Include" />
+              <e p="OutlineParameters.cs" t="Include" />
+              <e p="Outliner.cs" t="Include" />
+              <e p="OutlineTarget.cs" t="Include" />
+              <e p="PipelineAssetUtility.cs" t="Include" />
+              <e p="RendererFilteringUtility.cs" t="Include" />
+              <e p="RenderTargetUtility.cs" t="Include" />
+              <e p="SerializedPass.cs" t="Include" />
+              <e p="TargetsHolder.cs" t="Include" />
+              <e p="URPOutlineFeature.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Dwarf.cs" t="Include" />
+        </e>
+        <e p="SelectionManager.cs" t="Include" />
+        <e p="TestAnimationScript.cs" t="Include" />
+        <e p="TileColors.cs" t="Include" />
+        <e p="TileIndicator.cs" t="Include" />
+        <e p="TileManagerSystem.cs" t="Include" />
+        <e p="TileType.cs" t="Include" />
+        <e p="xTernalAssets" t="Include">
+          <e p="Fantasy Horde - Orc" t="Include">
+            <e p="Polygonmaker - Shader" t="Include">
+              <e p="Polygonmaker-AS-Ice.shader" t="Include" />
+              <e p="Polygonmaker-AS-Skin Defered.shader" t="Include" />
+              <e p="Polygonmaker-AS-Skin Forward.shader" t="Include" />
+              <e p="Polygonmaker-AS-SkinCutout Defered DoubleSided.shader" t="Include" />
+              <e p="Polygonmaker-AS-SkinCutout Forward DoubleSided.shader" t="Include" />
+              <e p="Polygonmaker-AS-SkinCutout Forward Specular DoubleSided.shader" t="Include" />
+              <e p="Shaders 1.2.txt" t="Include" />
+              <e p="StandardDoubleSided.shader" t="Include" />
+              <e p="Unity Standard" t="Include">
+                <e p="ToonBasic.shader" t="Include" />
+                <e p="ToonBasicOutline_modified.shader" t="Include" />
+                <e p="ToonLit.shader" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="GUI Kit Casual Game" t="Include">
             <e p="Extensions" t="Include">
               <e p="TextMesh Pro" t="Include">
@@ -52,6 +168,41 @@
               <e p="CtrPanel.cs" t="Include" />
             </e>
           </e>
+          <e p="GUIPackFrozen" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Fonts" t="Include">
+                <e p="CabinFontlog.txt" t="Include" />
+                <e p="CabinOFL.txt" t="Include" />
+                <e p="FredokaOneOFL.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="AnimatedButton.cs" t="Include" />
+                <e p="BackgroundMusic.cs" t="Include" />
+                <e p="ColorSwapper.cs" t="Include" />
+                <e p="Fader.cs" t="Include" />
+                <e p="InitialPlayerPrefs.cs" t="Include" />
+                <e p="LevelScene.cs" t="Include" />
+                <e p="MusicButton.cs" t="Include" />
+                <e p="MusicManager.cs" t="Include" />
+                <e p="MuteBackgroundMusic.cs" t="Include" />
+                <e p="PlayPopup.cs" t="Include" />
+                <e p="PlayPopupOpener.cs" t="Include" />
+                <e p="Popup.cs" t="Include" />
+                <e p="PopupOpener.cs" t="Include" />
+                <e p="SceneTransition.cs" t="Include" />
+                <e p="SoundButton.cs" t="Include" />
+                <e p="SoundManager.cs" t="Include" />
+                <e p="SpinWheel.cs" t="Include" />
+                <e p="SpriteSwapper.cs" t="Include" />
+                <e p="TintedButton.cs" t="Include" />
+                <e p="Transition.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="GrayTint.shader" t="Include" />
+                <e p="Overlay.shader" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Mini Legion Warband PBR" t="Include">
             <e p="Shader" t="Include">
               <e p="PBRMaskTint.shader" t="Include" />
@@ -63,7 +214,6 @@
             </e>
           </e>
         </e>
-        <e p="TileManagerSystem.cs" t="Include" />
       </e>
       <e p="MalmoTowerDefence.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
