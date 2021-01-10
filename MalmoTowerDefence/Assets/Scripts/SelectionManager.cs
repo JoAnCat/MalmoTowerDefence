@@ -5,14 +5,24 @@ using UnityEngine;
 
 public class SelectionManager : MonoBehaviour
 {
+    [SerializeField] private List<GameObject> sloths;
+    //public delegate bool CanSelectDwarf(string NAME);
+    public delegate void UnitPurchase(string NAME);
+
+    //public static event CanSelectDwarf OnCanSelectDwarf;
+    public static event UnitPurchase OnUnitBought;
     private TileIndicator selectedTileScript;
+    private GameObject selectedTile;
     private Vector3 selectedTilePos;
     private Transform selectedObject;
     private Vector3 selectedObjectOrigin;
     //private Camera myCam;
     private Camera unitCam, mainCam;
     private bool isSelected, hasUnitSelected, isDropable;
-    
+
+
+    public bool HasUnitSelected => hasUnitSelected;
+
 
     private void Start()
     {
@@ -25,7 +35,7 @@ public class SelectionManager : MonoBehaviour
         if (isDropable)
         {
             isDropable = false;
-            selectedTileScript.hasUnitSelected = false;
+            selectedTileScript.thisTileSelected = false;
         }
         if (Input.GetMouseButtonDown(0))
             MouseLeftBegin();
@@ -57,11 +67,13 @@ public class SelectionManager : MonoBehaviour
             if (hit.transform.tag.Equals("Tile"))
             {
                 print("bingo!");
+                selectedTile = hit.transform.gameObject;
                 selectedTileScript = hit.transform.GetComponent<TileIndicator>();
                 selectedTilePos = hit.transform.position;
+                
                 if (selectedTileScript.isOccupied == false)
                 {
-                    selectedTileScript.hasUnitSelected = true;
+                    selectedTileScript.thisTileSelected = true;
                     isDropable = true;
                 }
             }
@@ -78,28 +90,37 @@ public class SelectionManager : MonoBehaviour
             if (hit.transform.tag.Equals("Unit"))
             {
                 print("object selected");
+                if(CheckTargetIsOpen4Business(hit.transform.gameObject.GetComponent<DwarfSelectPrefabs>().unitType.name))
                 selectedObject = hit.transform;
                 selectedObjectOrigin = selectedObject.position;
                 hasUnitSelected = true;
             }
         }
     }
-    
+
+    private bool CheckTargetIsOpen4Business(string NAME)
+    {
+        foreach (GameObject sloth in sloths)
+        {
+            PurschaseBlockedIndicator pbi = sloth.transform.GetComponent<PurschaseBlockedIndicator>();
+            if (pbi.UnitName.Equals(NAME) && pbi.openForBusiness)
+                return true;
+        }
+
+        return false;
+    }
+
     private void MouseLeftEnd()
     {
         if (hasUnitSelected)
         {
             if (isDropable)
             {
-            
+                print("trying to create new dwarf from pool");
+                DwarfPool.GetDwarf(selectedObject.transform.GetComponent<DwarfSelectPrefabs>().unitType.name, selectedTile);
+                OnUnitBought?.Invoke(selectedObject.transform.GetComponent<DwarfSelectPrefabs>().unitType.name);
             }
-            else
-            {
-                print($"selectedObject.position {selectedObject.position.ToString()}");
-                selectedObject.position = new Vector3(selectedObjectOrigin.x, selectedObjectOrigin.y, selectedObjectOrigin.z);
-                print($"selectedObject.position {selectedObject.position.ToString()}");
-                print("trying to return");
-            }
+            selectedObject.position = new Vector3(selectedObjectOrigin.x, selectedObjectOrigin.y, selectedObjectOrigin.z);
         }
 
 

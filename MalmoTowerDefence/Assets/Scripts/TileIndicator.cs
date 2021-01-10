@@ -9,19 +9,22 @@ public class TileIndicator : MonoBehaviour
     [SerializeField] private Color colorNormal;
     [SerializeField] private Color colorSelected;
     private Camera mainCam;
-    public bool hasUnitSelected, isOccupied;
+    public bool isOccupied, thisTileSelected;
+    //[SerializeField] private Transform selectionManager;
+    private SelectionManager selectionManagerScript;
     
     private void Start()
     {
         mainCam = Camera.main;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        selectionManagerScript = GameObject.FindWithTag("SelectionManager").GetComponent<SelectionManager>();
     }
 
     private void Update()
     {
         if (isOccupied == false)
         {
-            if (hasUnitSelected)
+            if (selectionManagerScript.HasUnitSelected && thisTileSelected)
             {
                 spriteRenderer.color = colorSelected;
             }

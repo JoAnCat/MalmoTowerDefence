@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6352702373625200062}
   - component: {fileID: 6352702373625200061}
   - component: {fileID: 6352702373625200060}
+  - component: {fileID: -9134264261399867587}
   m_Layer: 5
   m_Name: Sloth Warrior Ax
   m_TagString: Untagged
@@ -89,3 +90,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 4299486177160510645, guid: e2984ac2e9e39bc48a1767de833bd07a,
     type: 3}
+--- !u!114 &-9134264261399867587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6352702373625200058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af318323ba4958d4184b94fb7eff6049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

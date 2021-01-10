@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2686055955855791434}
   - component: {fileID: -3578953322558319645}
   - component: {fileID: 44478372459645778}
+  - component: {fileID: -5410459939785955959}
   m_Layer: 0
   m_Name: TileNC
   m_TagString: Tile
@@ -110,4 +111,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colorNormal: {r: 0.17801106, g: 0.1775543, b: 0.1792453, a: 0.5019608}
   colorSelected: {r: 1, g: 0, b: 0.7642517, a: 0.7058824}
-  hasUnitSelected: 0
+  isOccupied: 0
+  thisTileSelected: 0
+--- !u!114 &-5410459939785955959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641347904989468476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19c248e0335ac2419ac2eb9a607076f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodGuy: {fileID: 0}
+  badGuys: []
+  hasCrystals: 0
+  columnId: 0
+  rowId: 0

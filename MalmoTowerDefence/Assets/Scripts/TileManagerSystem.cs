@@ -15,9 +15,10 @@ public class TileManagerSystem : MonoBehaviour
     
     private static int columns = 11;
     private static int rows = 5;
-    private GameObject[,] TileList = new GameObject[5, 11];
+    private static GameObject[,] tileList = new GameObject[5, 11];
+    public static GameObject[,] TileList => tileList;
 
-    [SerializeField] private static float rowDistance = 1.5f;
+    private static float rowDistance = 1.5f;
     [SerializeField] private static float columnDistance = 1.3f;
     private float spawnVisualBuffer = 2f;
 
@@ -70,11 +71,13 @@ public class TileManagerSystem : MonoBehaviour
                     break;
             }
 
-            TileList[CURRENT_ROW, i] = Instantiate(tile, SPAWN_POSITION, Quaternion.Euler(90, 0, 0), THIS_TRANSFORM);
+            tileList[CURRENT_ROW, i] = Instantiate(tile, SPAWN_POSITION, Quaternion.Euler(90, 0, 0), THIS_TRANSFORM);
             if(i == columns - 2)
                 SPAWN_POSITION += new Vector3(0, 0, columnDistance * spawnVisualBuffer);
             else
                 SPAWN_POSITION += new Vector3(0, 0, columnDistance);
+            tileList[CURRENT_ROW, i].GetComponent<Tile>().rowId = CURRENT_ROW;
+            tileList[CURRENT_ROW, i].GetComponent<Tile>().columnId = i;
         }
     }
 }

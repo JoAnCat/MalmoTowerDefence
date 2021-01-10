@@ -8,14 +8,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="BoardManager.cs" t="Include" />
-        <e p="BuyNDrag.cs" t="Include" />
-        <e p="CrystalHolder.cs" t="Include" />
-        <e p="DragUnit.cs" t="Include" />
-        <e p="DwarfData.cs" t="Include" />
-        <e p="LaneManager.cs" t="Include" />
-        <e p="Lanes4BoardManager.cs" t="Include" />
-        <e p="MouseInput.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Easy performant outline" t="Include">
             <e p="Demo" t="Include">
@@ -96,15 +88,38 @@
             </e>
           </e>
         </e>
+        <e p="PurschaseBlockedIndicator.cs" t="Include" />
+        <e p="ScoreManager.cs" t="Include" />
         <e p="Scripts" t="Include">
-          <e p="Dwarf.cs" t="Include" />
+          <e p="BadguySpawner.cs" t="Include" />
+          <e p="BoardManager.cs" t="Include" />
+          <e p="BuyNDrag.cs" t="Include" />
+          <e p="CrystalHolder.cs" t="Include" />
+          <e p="DragUnit.cs" t="Include" />
+          <e p="DwarfScripts" t="Include">
+            <e p="Dwarf.cs" t="Include" />
+            <e p="DwarfData.cs" t="Include" />
+            <e p="DwarfPool.cs" t="Include" />
+            <e p="DwarfSelectPrefabs.cs" t="Include" />
+            <e p="DwarfWorker.cs" t="Include" />
+          </e>
+          <e p="EnumValueSO.cs" t="Include" />
+          <e p="LaneManager.cs" t="Include" />
+          <e p="Lanes4BoardManager.cs" t="Include" />
+          <e p="MouseInput.cs" t="Include" />
+          <e p="OrcPool.cs" t="Include" />
+          <e p="OrcScripts" t="Include">
+            <e p="Orc.cs" t="Include" />
+            <e p="OrcFighters.cs" t="Include" />
+          </e>
+          <e p="SelectionManager.cs" t="Include" />
+          <e p="TestAnimationScript.cs" t="Include" />
+          <e p="Tile.cs" t="Include" />
+          <e p="TileColors.cs" t="Include" />
+          <e p="TileIndicator.cs" t="Include" />
+          <e p="TileManagerSystem.cs" t="Include" />
+          <e p="TileType.cs" t="Include" />
         </e>
-        <e p="SelectionManager.cs" t="Include" />
-        <e p="TestAnimationScript.cs" t="Include" />
-        <e p="TileColors.cs" t="Include" />
-        <e p="TileIndicator.cs" t="Include" />
-        <e p="TileManagerSystem.cs" t="Include" />
-        <e p="TileType.cs" t="Include" />
         <e p="xTernalAssets" t="Include">
           <e p="Fantasy Horde - Orc" t="Include">
             <e p="Polygonmaker - Shader" t="Include">

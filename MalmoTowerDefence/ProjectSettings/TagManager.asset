@@ -7,6 +7,8 @@ TagManager:
   - SecondCamera
   - Unit
   - Tile
+  - SelectionManager
+  - TileManager
   layers:
   - Default
   - TransparentFX

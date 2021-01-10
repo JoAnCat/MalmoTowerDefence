@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7891111749398139660}
   - component: {fileID: 7891111749398139661}
   - component: {fileID: 7891111749398139663}
+  - component: {fileID: 6426376520644267712}
   m_Layer: 5
   m_Name: Sloth Worker
   m_TagString: Untagged
@@ -89,3 +90,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 4299486177160510645, guid: 78f06a2ba9a259a45bf763ce9348a8c6,
     type: 3}
+--- !u!114 &6426376520644267712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7891111749398139667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af318323ba4958d4184b94fb7eff6049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
