@@ -2345,7 +2345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ffc35c484c92db4690013f4c864bb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: archer
+  unitType: {fileID: 11400000, guid: f9f9dbb465c8aa8478dfad31171ed1fe, type: 2}
 --- !u!1 &5052083831690684449
 GameObject:
   m_ObjectHideFlags: 0

@@ -2914,7 +2914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ffc35c484c92db4690013f4c864bb82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: infantry
+  unitType: {fileID: 11400000, guid: 14e50d9596ece8541bc02814ec09af91, type: 2}
 --- !u!1 &6494111419707332280
 GameObject:
   m_ObjectHideFlags: 0

@@ -4548,6 +4548,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5756120518544525051}
   - component: {fileID: 5954938759185966193}
+  - component: {fileID: -8864946953807056017}
+  - component: {fileID: -3299177825839382792}
   m_Layer: 0
   m_Name: DWF_Light_Infantry_B
   m_TagString: Untagged
@@ -4617,6 +4619,35 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-8864946953807056017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8587704306446695768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59cf086865f9c0441a091199d94c8655, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axWarriorSO: {fileID: 11400000, guid: 14e50d9596ece8541bc02814ec09af91, type: 2}
+  maxHealth: 300
+  strength: 100
+--- !u!114 &-3299177825839382792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8587704306446695768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5545df8a89326469e7ca1da0101889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  column: 0
+  row: 0
 --- !u!1 &8708630567711004557
 GameObject:
   m_ObjectHideFlags: 0

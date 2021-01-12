@@ -5,9 +5,17 @@
     <e p="C:\Users\jonat\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_MalmoTowerDefence.1814643797.00" t="ExcludeRecursive" />
     <e p="C:\Users\jonat\UnityProjects\GitHubUnity\MalmoTowerDefence\MalmoTowerDefence" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AffordUnit.cs" t="Include" />
+        <e p="Arrow.cs" t="Include" />
+        <e p="CoinMovement.cs" t="Include" />
+        <e p="CurrentTile.cs" t="Include" />
+        <e p="DwarfArcher.cs" t="Include" />
+        <e p="DwarfFighter.cs" t="Include" />
+        <e p="MoneyPool.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Easy performant outline" t="Include">
             <e p="Demo" t="Include">
@@ -89,13 +97,14 @@
           </e>
         </e>
         <e p="PurschaseBlockedIndicator.cs" t="Include" />
+        <e p="SceneLoader.cs" t="Include" />
         <e p="ScoreManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BadguySpawner.cs" t="Include" />
           <e p="BoardManager.cs" t="Include" />
           <e p="BuyNDrag.cs" t="Include" />
+          <e p="Crystal.cs" t="Include" />
           <e p="CrystalHolder.cs" t="Include" />
-          <e p="DragUnit.cs" t="Include" />
           <e p="DwarfScripts" t="Include">
             <e p="Dwarf.cs" t="Include" />
             <e p="DwarfData.cs" t="Include" />
@@ -218,6 +227,98 @@
               </e>
             </e>
           </e>
+          <e p="JMO Assets" t="Include">
+            <e p="Cartoon FX (legacy)" t="Include">
+              <e p="CartoonFX Readme.txt" t="Include" />
+              <e p="Demo" t="Include">
+                <e p="Assets" t="Include">
+                  <e p="CFX_AutoStopLoopedEffect.cs" t="Include" />
+                  <e p="CFX_Demo.cs" t="Include" />
+                  <e p="CFX_Demo_New.cs" t="Include" />
+                  <e p="CFX_Demo_RandomDir.cs" t="Include" />
+                  <e p="CFX_Demo_RandomDirectionTranslate.cs" t="Include" />
+                  <e p="CFX_Demo_RotateCamera.cs" t="Include" />
+                  <e p="CFX_Demo_Translate.cs" t="Include" />
+                  <e p="CFX_Demo_WaterWiggle.shader" t="Include" />
+                </e>
+              </e>
+              <e p="Editor" t="Include">
+                <e p="CFX_InspectorHelpEditor.cs" t="Include" />
+                <e p="CFX_SpawnSystemEditor.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="CFX_AutoDestructShuriken.cs" t="Include" />
+                <e p="CFX_AutodestructWhenNoChildren.cs" t="Include" />
+                <e p="CFX_AutoRotate.cs" t="Include" />
+                <e p="CFX_InspectorHelp.cs" t="Include" />
+                <e p="CFX_LightIntensityFade.cs" t="Include" />
+                <e p="CFX_ShurikenThreadFix.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="CFXM_MobileParticleAB_Alpha8.shader" t="Include" />
+                <e p="CFXM_MobileParticleAdd_Alpha8.shader" t="Include" />
+              </e>
+              <e p="Spawn System" t="Include">
+                <e p="CFX_SpawnSystem.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Cartoon FX Easy Editor" t="Include">
+              <e p="CartoonFX Easy Editor Readme.txt" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CFXEasyEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Cartoon FX Remaster" t="Include">
+              <e p="CFXR Assets" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="CFXR Editor.asmdef" t="Include" />
+                  <e p="CFXR_ExpressionParser.cs" t="Include" />
+                  <e p="CFXR_MaterialInspector.cs" t="Include" />
+                  <e p="CFXR_Styles.cs" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="CFXR Runtime.asmdef" t="Include" />
+                  <e p="CFXR_Effect.CameraShake.cs" t="Include" />
+                  <e p="CFXR_Effect.cs" t="Include" />
+                  <e p="CFXR_ParticleText.cs" t="Include" />
+                  <e p="CFXR_ParticleText_Runtime.cs" t="Include" />
+                  <e p="CFXR_ParticleTextFontAsset.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="CFXR Particle Glow.shader" t="Include" />
+                  <e p="CFXR Particle Procedural Ring.shader" t="Include" />
+                  <e p="CFXR Particle Ubershader.shader" t="Include" />
+                  <e p="CFXR.cginc" t="Include" />
+                  <e p="CFXR_SETTINGS.cginc" t="Include" />
+                  <e p="CFXR_URP.cginc" t="Include" />
+                </e>
+              </e>
+              <e p="CFXR Prefabs" t="Include">
+                <e p="Texts" t="Include">
+                  <e p="_Make your own text effect.txt" t="Include" />
+                </e>
+              </e>
+              <e p="Demo Assets" t="Include">
+                <e p="CFXR Demo.asmdef" t="Include" />
+                <e p="CFXR_Demo.cs" t="Include" />
+                <e p="CFXR_Demo_RandomText.cs" t="Include" />
+                <e p="CFXR_Demo_Rotate.cs" t="Include" />
+                <e p="Kino Bloom" t="Include">
+                  <e p="Bloom.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="BloomEditor.cs" t="Include" />
+                    <e p="BloomGraphDrawer.cs" t="Include" />
+                    <e p="CFXR Demo Editor.asmdef" t="Include" />
+                  </e>
+                  <e p="Shader" t="Include">
+                    <e p="Bloom.cginc" t="Include" />
+                    <e p="Bloom.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Readme Cartoon FX Remaster.txt" t="Include" />
+            </e>
+          </e>
           <e p="Mini Legion Warband PBR" t="Include">
             <e p="Shader" t="Include">
               <e p="PBRMaskTint.shader" t="Include" />
@@ -230,6 +331,10 @@
           </e>
         </e>
       </e>
+      <e p="CFXRDemo.csproj" t="IncludeRecursive" />
+      <e p="CFXRDemoEditor.csproj" t="IncludeRecursive" />
+      <e p="CFXREditor.csproj" t="IncludeRecursive" />
+      <e p="CFXRRuntime.csproj" t="IncludeRecursive" />
       <e p="MalmoTowerDefence.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

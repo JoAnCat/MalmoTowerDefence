@@ -9,6 +9,11 @@ TagManager:
   - Tile
   - SelectionManager
   - TileManager
+  - Crystal
+  - CoinDestination
+  - Coin
+  - FxTemporaire
+  - ContinueButton
   layers:
   - Default
   - TransparentFX

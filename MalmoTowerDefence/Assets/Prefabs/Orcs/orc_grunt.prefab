@@ -509,6 +509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7482979375577996819}
   - component: {fileID: 7482979375570252215}
+  - component: {fileID: 8709824912740001671}
   m_Layer: 0
   m_Name: orc_grunt
   m_TagString: Untagged
@@ -525,7 +526,7 @@ Transform:
   m_GameObject: {fileID: 7482979375577629235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.287, y: 0, z: 1.87}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 7482979375577996919}
   - {fileID: 7482979375577996821}
@@ -542,7 +543,7 @@ Animator:
   m_GameObject: {fileID: 7482979375577629235}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ecff60d01870afe4d92c07821111f573, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0874fe9399b45340ae0d8582334f622, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -551,6 +552,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8709824912740001671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482979375577629235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea7f441e38986e4c984718ca629f2af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTile: {fileID: 0}
+  orcType: {fileID: 11400000, guid: 37a677fe206469644819f1b47d0b97f9, type: 2}
+  maxHealth: 100
+  strength: 10
+  nextTile: {fileID: 0}
+  moveSpeed: 0.2
+  acceptableDistanceToNextTile: 0.1
 --- !u!1 &7482979375577629237
 GameObject:
   m_ObjectHideFlags: 0

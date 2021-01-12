@@ -4944,6 +4944,7 @@ GameObject:
   - component: {fileID: 5095511942862950685}
   - component: {fileID: 7299097264180853400}
   - component: {fileID: 7043695229714287323}
+  - component: {fileID: 5681863285603277413}
   m_Layer: 0
   m_Name: DWF_Worker_A
   m_TagString: Untagged
@@ -5025,6 +5026,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b6732c7c490b64b9197500b01e366e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  workerSO: {fileID: 11400000, guid: 72a3ff44fa8cf9d4ba5a6e7c34478c81, type: 2}
+  health: 100
+  diamondsPerSwing: 25
+--- !u!114 &5681863285603277413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8808791975427920051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5545df8a89326469e7ca1da0101889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  column: 0
+  row: 0
 --- !u!1 &8961281846171543435
 GameObject:
   m_ObjectHideFlags: 0

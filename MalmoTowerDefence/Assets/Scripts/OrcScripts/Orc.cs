@@ -12,7 +12,7 @@ public abstract class Orc : MonoBehaviour
     // ändra till rprotected
     public GameObject currentTile;
     protected DwarfData myData;
-    protected float currentHealth;
+    protected int currentHealth;
     protected bool wasAttacked;
     protected bool isDead;
 
@@ -23,16 +23,17 @@ public abstract class Orc : MonoBehaviour
         currentTile.GetComponent<Tile>().AddBadGuy(gameObject);
     }
 
-    public void Attacked(float DAMAGE)
+    public void TakeDamage(int DAMAGE)
     {
+        
         if(DAMAGE <= 0)
             Debug.Log("Orc: Damage can't be zero or less");
         currentHealth -= DAMAGE;
         if (currentHealth < 0)
             isDead = true;
-        else
-            wasAttacked = true;
+        wasAttacked = true;
+        print($"orc took damage: Damage taken {DAMAGE} current health {currentHealth}");
     }
     
-    protected abstract void ResetValues();
+    public abstract void ResetValues();
 }

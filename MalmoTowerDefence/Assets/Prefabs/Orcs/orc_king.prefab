@@ -565,9 +565,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTile: {fileID: 0}
+  orcType: {fileID: 11400000, guid: 62b94fd80e0993c478715d1e0499e2d0, type: 2}
+  maxHealth: 200
+  strength: 50
   nextTile: {fileID: 0}
   moveSpeed: 0.1
-  acceptableDistanceToNextTile: 0.05
+  acceptableDistanceToNextTile: 0.1
 --- !u!1 &1637404641600702141
 GameObject:
   m_ObjectHideFlags: 0
